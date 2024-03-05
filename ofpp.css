@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+}
+#navbar img{
+    width: 100px;
+    margin-left:100px;
+    margin-top: 15px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    height: 100vh;
+    background: url("image/formateur\ ofppt.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar ul{
+    display: flex;
+    margin-right: 100px;
+
+}
+#navbar ul li a{
+    padding: 15px 20px;
+    color: black;
+    font-weight:300;  
+}
+#navbar ul li a:hover{
+    border-bottom:2px solid rgb(24, 62, 24) ;
+    transition: 0.3s;
+}
+header .content{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items:center ;
+    height: 100%;
+    gap: 16px;
+}
+header .content h1{
+    font-size: 40px; 
+    color: white; 
+    text-align: center;
+}
+header .content p{
+    color:white;
+    text-align: center;
+}
+.btn{
+    display:block;
+    margin-inline: auto;
+    max-width: max-content;
+    padding:15px 30px ;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    border:1px solid white ;
+    background-color: green;
+    cursor: pointer;
+}
+.btn:hover{
+    background:rgb(67, 67, 171);
+    transition: 0.3s;
+}
+.plusieurs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+    padding:7rem
+}
+.row{
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   text-align: center;
+   
+}
+.row .colo{
+    background-color:white;
+    margin: 0 1rem;
+    padding: 50px 20px;
+    border-radius:5px ;
+    box-shadow:3px 3px 15px rgb(0, 0,0,0.2)
+
+}
+.stars{
+    color: red;
+}
+#icon{
+    color: rgb(82, 224, 224);
+}
+.container{
+    margin: 40px;
+}
+#about{
+    height:110vh ;
+    display: flex;
+    align-items: center;
+}
+.titre{
+    text-align: center;
+    align-items: center;
+    margin-block: 36px;
+}
+.titre h2 {
+    margin-block-end: 16px;
+}
+h4{
+    color:darkolivegreen;
+    font-size: 20px;
+}
+#about .content{
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+     gap: 25px
+}
+.colo {
+    transition: 0.4s;
+}
+.colo:hover {
+    transform: translateX(12px);
+    position: relative;
+}
+.colo::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    background-color: cornflowerblue;
+    transition: 0.5s;
+    width: 0;
+}
+.colo:hover::before {
+    width: 100%;
+}
+
+.content .text {
+    padding: 8px 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 0 0 #ddd,
+    -2px -2px 0 0 #ddd;
+    margin-block-end: 16px;
+}
+.img-holder {
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    border-radius: 16px;
+}
+.img-holder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#about .container {
+    height: 100%;
+}
+.images {
+    display: grid;
+    gap: 16px;
+    flex-grow: 1;
+}
+
